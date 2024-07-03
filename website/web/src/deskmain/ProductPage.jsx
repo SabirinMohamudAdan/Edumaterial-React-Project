@@ -12,8 +12,8 @@ import image6 from './Images/bag3.jpg';
 import image7 from './Images/bag4.jpg';
 import image8 from './Images/bag5.jpg';
 import image9 from './Images/era7.jpg';
-import image10 from './Images/era8.jpg';
-import image11 from './Images/era5.jpg';
+import image10 from './Images/era4.jpg';
+import image11 from './Images/era9.jpg';
 import image12 from './Images/era11.jpg';
 import image13 from './Images/pen10.jpg';
 import image14 from './Images/pen3.jpg';
@@ -77,7 +77,8 @@ function ProductPage() {
                   ))}
                 </div>
                 <button
-                  className="mt-2 ml-4 hover:bg-pink-400 text-white px-6 py-3 rounded-md flex items-center justify-center transform hover:scale-125 border-b-2 border-l-2 border-blue-300"
+                  className=" bg-slate-500 mt-2 ml-4
+                   hover:bg-pink-400 text-white px-2 py-2 rounded-md flex items-center justify-center transform hover:scale-125 border-b-2 border-l-2 border-blue-300"
                   onClick={() => isInCart(product.id) ? removeFromCart(product.id) : addToCart(product)}
                 >
                   <FaPlus className="mr-2" /> {isInCart(product.id) ? 'Remove from Cart' : 'Add to Cart'}

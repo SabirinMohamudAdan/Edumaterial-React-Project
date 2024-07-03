@@ -1,6 +1,8 @@
 import React from 'react';
-import { FaGift, FaBook, FaShippingFast, FaStore, FaLaptop, FaTags } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
+import { FaGift, FaBook, FaShippingFast, FaStore, FaLaptop, FaTags }
+ from 'react-icons/fa';
+ import { FaLocust } from "react-icons/fa6";
 import sampleProperty1 from './images1/2.jpg';
 import sampleProperty2 from './images1/3.jpg';
 import sampleProperty3 from './images1/4.jpg';
@@ -18,7 +20,7 @@ const Service = () => {
     return (
         <>
             {/* Section Header */}
-            <div className="text-center py-10">
+            <div className="text-center py-10  mt-20">
                 <h1 className="text-4xl font-semibold">Our Services</h1>
                 <p className="text-md text-gray-600 mt-2">Discover the variety of services we offer</p>
             </div>
@@ -35,6 +37,8 @@ const Service = () => {
                                 <h3 className="text-lg font-medium text-gray-900">{service.title}</h3>
                             </div>
                         ))}
+                      
+                      
                     </div>
                 </div>
             </div>
@@ -48,22 +52,29 @@ const Service = () => {
                         <img src={sampleProperty1} alt="Property 1" />
                         <h3>top person</h3>
                         <h2>Juweria Dahir Abdirahman</h2>
-
-                        
                     </div>
                     <div className="property-card">
                         <img src={sampleProperty2} alt="Property 2" />
                         <h3>the assistant.</h3>
                         <p>Sabirin Mohamud Adan</p>
-                        
                     </div>
                     <div className="property-card">
                         <img src={sampleProperty3} alt="Property 3" />
                         <h3>Financial Officer</h3>
                         <p>Sabirin Mohamed Ali</p>
-                       
                     </div>
                 </div>
+
+                    {/* Link to Customer Page */}
+                    <div className="text-center transition 
+                    transform hover:scale-105 mt-20">
+                            <Link to="/customer" className="block">
+                                <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4 bg-pink-600 text-white rounded-full">
+                                    <FaLocust  size={32} />
+                                </div>
+                                <h3 className="text-lg font-medium text-gray-900">Customer Reviews</h3>
+                            </Link>
+                        </div>
             </section>
         </>
     );
