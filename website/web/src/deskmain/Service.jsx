@@ -1,7 +1,9 @@
-// src/deskmain/Service.jsx
-
 import React from 'react';
 import { FaGift, FaBook, FaShippingFast, FaStore, FaLaptop, FaTags } from 'react-icons/fa';
+
+import sampleProperty1 from './images1/2.jpg';
+import sampleProperty2 from './images1/3.jpg';
+import sampleProperty3 from './images1/4.jpg';
 
 const services = [
     { icon: <FaTags size={32} />, title: 'Offers' },
@@ -14,20 +16,56 @@ const services = [
 
 const Service = () => {
     return (
-        <div className="py-6 bg-gray-100">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8">
-                    {services.map((service, index) => (
-                        <div key={index} className="text-center transition transform hover:scale-105">
-                            <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4 bg-purple-600 text-white rounded-full">
-                                {service.icon}
+        <>
+            {/* Section Header */}
+            <div className="text-center py-10">
+                <h1 className="text-4xl font-semibold">Our Services</h1>
+                <p className="text-md text-gray-600 mt-2">Discover the variety of services we offer</p>
+            </div>
+
+            {/* Display Icons */}
+            <div className="py-6 bg-gray-100">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-6 gap-8">
+                        {services.map((service, index) => (
+                            <div key={index} className="text-center transition transform hover:scale-105">
+                                <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4 bg-pink-600 text-white rounded-full">
+                                    {service.icon}
+                                </div>
+                                <h3 className="text-lg font-medium text-gray-900">{service.title}</h3>
                             </div>
-                            <h3 className="text-lg font-medium text-gray-900">{service.title}</h3>
-                        </div>
-                    ))}
+                        ))}
+                    </div>
                 </div>
             </div>
-        </div>
+
+            {/* Display Images with Names and Prices */}
+            <section className="properties">
+                <h1>We buy The <span className="highlight">Best</span> Based On The <span className="highlight">edumaterial equipments</span> That You Like</h1>
+                <h2>meet our services</h2>
+                <div className="property-cards">
+                    <div className="property-card">
+                        <img src={sampleProperty1} alt="Property 1" />
+                        <h3>top person</h3>
+                        <h2>Juweria Dahir Abdirahman</h2>
+
+                        
+                    </div>
+                    <div className="property-card">
+                        <img src={sampleProperty2} alt="Property 2" />
+                        <h3>the assistant.</h3>
+                        <p>Sabirin Mohamud Adan</p>
+                        
+                    </div>
+                    <div className="property-card">
+                        <img src={sampleProperty3} alt="Property 3" />
+                        <h3>Financial Officer</h3>
+                        <p>Sabirin Mohamed Ali</p>
+                       
+                    </div>
+                </div>
+            </section>
+        </>
     );
 };
 

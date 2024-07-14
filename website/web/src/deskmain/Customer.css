@@ -1,0 +1,69 @@
+.how-it-works {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  
+  .step {
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Easing function for more dynamic effect */
+  }
+  
+  .step:hover {
+    transform: translateY(-15px) scale(1.05); /* Moves up and scales up */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  }
+  
+  .step img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+  }
+  
+  .step:hover img {
+    transform: scale(1.15); /* Larger zoom effect on image */
+  }
+  
+  .step h5 {
+    font-size: 18px;
+    color: #333;
+    margin-top: 10px;
+    transition: color 0.4s ease;
+  }
+  
+  .step:hover h5 {
+    color: #007bff; /* Brighter color for emphasis */
+  }
+  
+  .step p {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    margin-top: 5px;
+    padding: 0 15px;
+    transition: color 0.4s ease;
+  }
+  
+  .step:hover p {
+    color: #333333; /* Darker color for better readability */
+  }
+  

@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../deskmain/Images/veu3.mp4'; // Adjust the video path as per your project structure
+import video from '../deskmain/Images/veu4.mp4'; // Adjust the video path as per your project structure
 
 function Backgroun() {
   return (
@@ -12,7 +12,9 @@ function Backgroun() {
 
       {/* Content */}
       <div className="relative z-30 text-center text-white p-12 md:p-20">
-        <h2 className="text-black-500 text-4xl font-bold mt-6">Edu Material <span className="text-pink-500">Hub</span></h2>
+        <h2 className="text-black-500 text-4xl font-bold mt-6">
+          Edu Material <span className="text-pink-500">Hub</span>
+        </h2>
         <p className="text-lg text-gray-300 mb-8 mt-6 leading-relaxed">
           Education Materials Are Crucial In Shaping The Learning Experience And Delivering.
           Educational Materials Are Foundational <br />To Effective Learning, Future Careers And Personal Lives.
