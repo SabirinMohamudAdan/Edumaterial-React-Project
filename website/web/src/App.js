@@ -11,6 +11,8 @@ import Service from './deskmain/Service';
 import ContactPage from './deskmain/ContactPage';
 import MoreAboutUs from './deskmain/MoreAboutUs';
 import ProductDetail from './deskmain/ProductDetail';
+import ProductPage from './deskmain/ProductPage';
+ 
 import Customer from './deskmain/Customer';
 
 
