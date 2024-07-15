@@ -1,6 +1,5 @@
-// src/deskmain/MoreAboutUs.jsx
-
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import image1 from './Images/pen9.jpg'; // Replace with your image path
 import image2 from './Images/pen10.jpg'; // Replace with your image path
 import image3 from './Images/pen11.jpg'; // Replace with your image path
@@ -37,8 +36,10 @@ function MoreAboutUs() {
             {slides.map((slide, index) => (
               <div
                 key={index}
-                className={`absolute inset-0 transition-transform duration-1000 ${index === currentSlide ? 'translate-x-0' : 'translate-x-full'}`}
-                style={{ backgroundImage: `url(${slide.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+                className={`absolute inset-0 transition-transform 
+                  duration-1000 ${index === currentSlide ? 
+                    'translate-x-0' : 'translate-x-full'}`}
+                style={{ backgroundImage:`url(${slide.image})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
               >
                 <div className="bg-black bg-opacity-50 h-full w-full flex items-center justify-center">
                   <h2 className="text-2xl text-white font-bold text-center">{slide.text}</h2>
@@ -53,6 +54,9 @@ function MoreAboutUs() {
             &#10095;
           </button>
         </div>
+
+        {/* Link to AboutPage */}
+        <Link to="/about" className="text-pink-600 font-bold text-lg hover:underline">Learn More About Us</Link>
 
         <p className="text-lg text-gray-700 leading-relaxed mb-6">
           Our mission is to support learners at every stage of their educational journey. With our diverse range of resources, students can delve deeper into subjects, educators can find new inspiration for their lessons, and lifelong learners can continue to expand their horizons. We are committed to providing high-quality educational materials that are accessible and engaging for everyone.

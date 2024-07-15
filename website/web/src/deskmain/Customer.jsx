@@ -31,7 +31,7 @@ function Customer() {
   ];
 
   return (
-    <section className="how-it-works">
+    <section className=" mt-40">
       <h1 className="section-title">What Our Customers Say</h1>
       <div className="steps">
         {customers.map((customer, index) => (
