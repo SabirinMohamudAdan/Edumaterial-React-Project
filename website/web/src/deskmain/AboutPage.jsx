@@ -4,6 +4,7 @@ import { FaArrowRight } from 'react-icons/fa';
 import image2 from './Images/bg23.jpg'
 function AboutPage() {
   return (
+<<<<<<< HEAD
     <div className="bg-gray-100 py-27 mt-20">
       <div className="container mx-auto px-20">
         <h1 className="text-4xl md:text-5xl font-bold 
@@ -31,6 +32,11 @@ function AboutPage() {
     </div>
     
   );
+=======
+  <h1>AboutPage us</h1>
+
+  )
+>>>>>>> upstream/main
 }
 
 export default AboutPage;

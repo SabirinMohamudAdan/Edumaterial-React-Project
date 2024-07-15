@@ -1,8 +1,7 @@
 import React from 'react';
 import { FaStar, FaPlus } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
-import { useCart } from './CartContext'; // Import the CartContext
-// import image22 from './Images/bog112.jpg';
+import { useCart } from './CartContext';
 import image1 from './Images/bog11.jpg';
 import image2 from './Images/bog4.jpg';
 import image3 from './Images/bog12.jpg';
@@ -40,7 +39,7 @@ const products = [
 ];
 
 function ProductPage() {
-  const { addToCart, removeFromCart, cart } = useCart(); 
+  const { addToCart, removeFromCart, cart } = useCart();
 
   const isInCart = (productId) => cart.some(item => item.id === productId);
 
@@ -48,18 +47,9 @@ function ProductPage() {
     <div className="bg-gray-100 pt-24">
       <div className="container mx-auto py-12 px-4">
         <div className="flex flex-col md:flex-row items-center justify-center space-y-6 md:space-y-0 md:space-x-6">
-          
-            
-         
-          
-             
-            </div>
-          </div>
-          {/* <div className="md:w-2/3 flex items-center justify-center">
-            <img src={image22} alt="Interior Design" className="mx-auto md:mx-0 md:block mt-8 md:mt-0 max-w-full h-auto transform hover:scale-105 transition duration-300" />
-          </div> */}
-      
-      
+          {/* Add your other components here */}
+        </div>
+      </div>
       <div className="container mx-auto py-12 px-4">
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Trending Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 translate-y-5">
