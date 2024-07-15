@@ -3,7 +3,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 import './App.css';
 
-import Backgroun from './deskmain/Home';
+import Backgroun from './deskmain/Home'; // Import the Home component
 import Nann from './deskmain/Nann';
 
 import AboutPage from './deskmain/AboutPage';
@@ -19,6 +19,7 @@ import Customer from './deskmain/Customer';
 
 function App() {
   return (
+<<<<<<< HEAD
     <ProductProvider>
       <CartProvider>
         <Router>
@@ -85,13 +86,39 @@ const NavBar = () => {
   );
 };
 
+=======
+    <Router>
+      <div className="App">
+        <ConditionalComponents />
+        <Routes>
+          <Route path="/" element={<HomePage />} /> {/* Route for the Home page */}
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/products" element={<ProductPage />} />
+          <Route path="/offers" element={<Service />} />
+          <Route path="/customer" element={<Customer />} />
+          <Route path="/contact" element={<ContactPage />} />
+          <Route path="/more-about-us" element={<MoreAboutUs />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+        </Routes>
+      </div>
+    </Router>
+  );
+}
+
+>>>>>>> 9d5ff5f (Resolved merge conflicts in App.js)
 const HomePage = () => (
   <>
     <AboutPage />
     <Service />
     <Customer />
+<<<<<<< HEAD
     <ProductList />
     <ContactPage />
+=======
+    <ProductPage />
+    <ContactPage />
+    {/* <footer write here /> */}
+>>>>>>> 9d5ff5f (Resolved merge conflicts in App.js)
   </>
 );
 
