@@ -2,6 +2,7 @@ import React from 'react';
 import video from '../deskmain/Images/bghome.jpg';
 
 
+
 function Home() {
   return (
     <div className="  mt-10 relative w-full h-screen flex 
