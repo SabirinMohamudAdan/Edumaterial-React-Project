@@ -40,7 +40,10 @@ function Nann() {
         <li className="hover:text-pink-400"><Link to="/">Home</Link></li>
         <li className="hover:text-pink-400"><Link to="/about">About</Link></li>
         <li className="hover:text-pink-400"><Link to="/products">Products</Link></li>
-        <li className="hover:text-pink-400"><Link to="/offers">Offers</Link></li>
+        <li className="hover:text-pink-400"><Link to="/offers">Offers
+        </Link></li>
+        <li className="hover:text-pink-400"><Link to="/Customer">Customer
+        </Link></li>
         
         <li className="hover:text-pink-400"><Link to="/contact">Contact</Link></li>
       </ul>

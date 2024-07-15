@@ -25,13 +25,13 @@ const products = [
   { id: 5, name: "Book4", price: "$9", rating: 3, image: bog11,
      description: 'Detailed description for Book4' },
     
-  { id: 6, name: "Rucksack", price: "$11", rating: 9, image: image5,
+  { id: 6, name: "Rucksack", price: "$7", rating: 9, image: image5,
      description: 'Detailed description for pack' },
-     { id: 7, name: "Straps", price: "$11", rating: 7, image: image6,
+     { id: 7, name: "Straps", price: "$5.3", rating: 7, image: image6,
       description: 'Detailed description for pack' },
-      { id: 8, name: "Nylon", price: "$11", rating: 6, image: image7,
+      { id: 8, name: "Nylon", price: "$8", rating: 6, image: image7,
         description: 'Detailed description for pack' },
-        { id: 9, name: "Hand Bags", price: "$11", rating: 8, image: image8,
+        { id: 9, name: "Hand Bags", price: "$10", rating: 8, image: image8,
           description: 'Detailed description for pack' },
           { id: 10, name: "Custom Engraved", price: "$4", rating: 10, image: image10,
             description: 'Detailed description for pack' },
@@ -46,12 +46,7 @@ const products = [
                    image15,
                   description: 'Detailed description for ' },
 
-  // { id: 7, name: "Book6", price: "$7", rating: 3, image: bog12, description: 'Detailed description for Book6' },
-  // { id: 8, name: "Book7", price: "$13", rating: 5, image: bog7, description: 'Detailed description for Book7' },
-  // { id: 9, name: "Book8", price: "$14", rating: 4, image: bog11, description: 'Detailed description for Book8' },
-  // { id: 10, name: "Book9", price: "$6", rating: 3, image: bog4, description: 'Detailed description for Book9' },
-  // { id: 11, name: "Book10", price: "$16", rating: 5, image: bog12,
-  //    description: 'Detailed description for Book10' },
+
 ];
 
 function ProductDetail() {

@@ -68,12 +68,13 @@ const Service = () => {
                     {/* Link to Customer Page */}
                     <div className="text-center transition 
                     transform hover:scale-105 mt-20">
-                            <Link to="/customer" className="block">
+                            {/* <Link to="/customer" className="block">
                                 <div className="flex items-center justify-center w-20 h-20 mx-auto mb-4 bg-pink-600 text-white rounded-full">
                                     <FaLocust  size={32} />
                                 </div>
-                                <h3 className="text-lg font-medium text-gray-900">Customer Reviews</h3>
-                            </Link>
+                                <h3 className="text-lg font-medium
+                                 text-gray-900">Customer Reviews</h3>
+                            </Link> */}
                         </div>
             </section>
         </>
