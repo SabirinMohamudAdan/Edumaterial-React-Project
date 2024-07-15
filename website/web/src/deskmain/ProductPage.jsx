@@ -54,13 +54,17 @@ function ProductPage() {
         <h2 className="text-3xl font-bold text-center text-gray-800 mb-2">Trending Products</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 translate-y-5">
           {products.map(product => (
-            <div key={product.id} className="bg-white shadow-lg rounded-lg overflow-hidden transform hover:scale-105 transition duration-300">
+            <div key={product.id}
+             className="bg-white shadow-lg rounded-lg overflow-hidden
+              transform hover:scale-105 transition duration-300">
               <Link to={`/product/${product.id}`}>
-                <img src={product.image} alt={product.name} className="w-full h-48 object-cover rounded-lg shadow-md transition duration-300 transform hover:scale-105 hover:shadow-lg" />
+                <img src={product.image} alt={product.name} 
+                className="w-full h-48 object-cover rounded-lg shadow-md transition duration-300 transform hover:scale-105 hover:shadow-lg" />
               </Link>
               <div className="p-4">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h3>
-                <p className="text-lg text-gray-600 mb-2">{product.price}</p>
+                <p className="text-lg text-gray-600 mb-2">
+                  {product.price}</p>
                 <div className="flex">
                   {Array.from({ length: product.rating }, (_, index) => (
                     <FaStar key={index} className="text-yellow-500 ml-2" />
@@ -73,11 +77,71 @@ function ProductPage() {
                 >
                   <FaPlus className="mr-2" /> {isInCart(product.id) ? 'Remove from Cart' : 'Add to Cart'}
                 </button>
+       
+
               </div>
             </div>
+            
           ))}
         </div>
       </div>
+      <footer className=" bg-slate-400 text-white p-4 mt-auto">
+      <div className="container mx-white p-4 md:p-6 lg:p-8">
+        <div className="flex flex-wrap justify-center mb-4">
+          <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
+            <h4 className="text-lg font-bold mb-2">About Us</h4>
+            <p className="text-gray-600">
+            Welcome to EduMaterial, your go-to 
+            source for high-quality educational
+             resources. Our mission is to empower educators,
+              students, and parents with comprehensive,
+               curriculum-aligned materials that foster effective
+                learning and teaching.</p>
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
+            <h4 className="text-lg font-bold mb-2">Quick Links</h4>
+            <ul className="list-none mb-4">
+              <li className="mb-2">
+                <a className="text-gray-600 hover:text-gray-900" href="#">Home</a>
+              </li>
+              <li className="mb-2">
+                <a className="text-gray-600 hover:text-gray-900" href="#">About</a>
+              </li>
+              <li className="mb-2">
+                <a className="text-gray-600 hover:text-gray-900" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <div className="w-full md:w-1/2 lg:w-1/3 xl:w-1/4 p-4">
+            <h4 className="text-lg font-bold mb-2">Social Media</h4>
+            <ul className="list-none mb-4">
+              <li className="mb-2">
+                <a className="text-gray-600 hover:text-gray-900" 
+                href="#">
+                  <i className="fab fa-facebook-f mr-2" />
+                  Facebook
+                </a>
+              </li>
+              <li className="mb-2">
+                <a className="text-gray-600 hover:text-gray-900" href="#">
+                  <i className="fab fa-twitter mr-2" />
+                  Twitter
+                </a>
+              </li>
+              <li className="mb-2">
+                <a className="text-gray-600 hover:text-gray-900" href="#">
+                  <i className="fab fa-instagram mr-2" />
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <p className="text-gray-600 text-center">
+          Copyright 2024 EDUMATERIAL. All rights reserved.
+        </p>
+      </div>
+    </footer>
     </div>
   );
 }

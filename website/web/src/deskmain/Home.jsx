@@ -6,9 +6,7 @@ function Home() {
   return (
     <div className="  mt-10 relative w-full h-screen flex 
     items-center justify-center">
-      {/* Video Background */}
-      {/* <video className="absolute inset-0 w-full h-full object-cover z-0" 
-      src={video} autoPlay loop muted /> */}
+    
      <img className="absolute inset-0 w-full h-full object-cover z-0" 
       src={video}  />
       {/* Overlay */}
@@ -20,7 +18,7 @@ function Home() {
           Edu Material <span className="text-pink-500">Hub</span><br/>
        </h2>
         <p className="text-2lg text-white mb-8 mt-6 leading-relaxed 
-         font-Poppins">
+         font-serif font-bold">
           Education Materials Are Crucial In Shaping 
           The Learning Experience And well Delivering.<br/>
           Educational Materials Are Foundational 

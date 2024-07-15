@@ -8,7 +8,7 @@ import Nann from './deskmain/Nann';
 import AboutPage from './deskmain/AboutPage';
 import Service from './deskmain/Service';
 import ContactPage from './deskmain/ContactPage';
-import MoreAboutUs from './deskmain/MoreAboutUs';
+
 import ProductDetail from './deskmain/ProductDetail';
 import ProductPage from './deskmain/ProductPage';
  
@@ -27,7 +27,7 @@ function App() {
           <Route path="/offers" element={<Service />} />
           <Route path="/customer" element={<Customer />} />
           <Route path="/contact" element={<ContactPage />} />
-          <Route path="/more-about-us" element={<MoreAboutUs />} />
+        
           <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
       </div>

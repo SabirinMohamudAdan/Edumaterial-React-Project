@@ -78,7 +78,7 @@ function ProductDetail() {
             <Link to="/products" 
             className="bg-yellow-500 hover:bg-yellow-600
              text-white px-6 py-3 rounded-md font-medium">
-              Back to Home
+              Back to Product
             </Link>
           </div>
         </div>
@@ -101,7 +101,9 @@ function ProductDetail() {
               <Link to={`/product/${relatedProduct.id}`} className="text-blue-500 hover:text-blue-700">
                 View Details
               </Link>
+              
             </div>
+            
           ))}
         </div>
       </div>
