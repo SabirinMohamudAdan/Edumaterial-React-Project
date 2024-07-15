@@ -20,7 +20,7 @@ function Home() {
        </h2>
         <p className="text-2lg text-white mb-8 mt-6 leading-relaxed 
          font-serif font-bold">
-          Education Materials Are Crucial In Shaping 
+          Education Materials Are Crucial  Shaping 
           The Learning Experience And well Delivering.<br/>
           Educational Materials Are Foundational 
           To Effective Learning, Future<br/> Careers And Personal Lives.
